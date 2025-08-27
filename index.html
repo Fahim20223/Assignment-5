@@ -42,20 +42,23 @@
           <div>
             <div class="flex flex-col md:flex-row gap-3">
               <p
-                class="border-2 bg-[#41ff6b1a] py-3 px-10 rounded-3xl flex items-center gap-2"
+                class="border-2 bg-[#41ff6b1a] py-3 px-10 rounded-3xl flex items-center gap-2 text-center"
               >
-                <span class="text-xl font-bold">0</span>
+                <span id="count-heart" class="text-xl font-bold">0</span>
                 <img src="./assets/heart.png" alt="" class="w-7" />
               </p>
               <p
-                class="border-2 bg-[#41ff6b1a] py-3 px-8 rounded-3xl flex gap-2 items-center"
+                class="border-2 bg-[#41ff6b1a] py-3 px-8 rounded-3xl flex gap-2 items-center text-center"
               >
-                <span class="font-bold">100</span
+                <span id="coin-count" class="font-bold">100</span
                 ><img src="./assets/coin.png" alt="" class="w-7" />
               </p>
-              <p class="text-white text-xl bg-green-500 py-3 px-8 rounded-3xl">
-                2 Copy
-              </p>
+              <button
+                id="btn-copy"
+                class="text-white text-xl bg-green-500 py-3 px-8 rounded-3xl hover:bg-gray-400 text-center"
+              >
+                <span id="counting-btn">0</span> Copy
+              </button>
             </div>
           </div>
         </div>
@@ -85,7 +88,7 @@
               <div class="p-3 w-15 rounded-xl bg-[#ffe3e2]">
                 <img src="./assets/emergency.png" alt="" class="w-8" />
               </div>
-              <i class="fa-regular fa-heart"></i>
+              <i class="heart fa-regular fa-heart"></i>
             </div>
             <div>
               <h1 class="text-xl font-bold">National Emergency Number</h1>
@@ -104,9 +107,9 @@
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="rounded-lg px-12 text-white bg-green-500 hover:bg-gray-400"
+                class="card-btn rounded-lg px-12 text-white bg-green-500 hover:bg-gray-400"
               >
-                <i class="fa-solid fa-phone"></i> Copy
+                <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
@@ -115,7 +118,7 @@
               <div class="p-3 w-15 rounded-xl bg-[#ffe3e2]">
                 <img src="./assets/police.png" alt="" class="w-8" />
               </div>
-              <i class="fa-regular fa-heart"></i>
+              <i class="heart fa-regular fa-heart"></i>
             </div>
             <div>
               <h1 class="text-xl font-bold">Police Helpline Number</h1>
@@ -134,9 +137,9 @@
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="rounded-lg px-12 text-white bg-green-500 hover:bg-gray-400"
+                class="card-btn rounded-lg px-12 text-white bg-green-500 hover:bg-gray-400"
               >
-                <i class="fa-solid fa-phone"></i> Copy
+                <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
@@ -145,7 +148,7 @@
               <div class="p-3 w-15 rounded-xl bg-[#ffe3e2]">
                 <img src="./assets/fire-service.png" alt="" class="w-8" />
               </div>
-              <i class="fa-regular fa-heart"></i>
+              <i class="heart fa-regular fa-heart"></i>
             </div>
             <div>
               <h1 class="text-xl font-bold">Fire Service Number</h1>
@@ -164,9 +167,9 @@
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="rounded-lg px-12 text-white bg-green-500 hover:bg-gray-400"
+                class="card-btn rounded-lg px-12 text-white bg-green-500 hover:bg-gray-400"
               >
-                <i class="fa-solid fa-phone"></i> Copy
+                <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
@@ -175,7 +178,7 @@
               <div class="p-3 w-15 rounded-xl bg-[#ffe3e2]">
                 <img src="./assets/ambulance.png" alt="" class="w-8" />
               </div>
-              <i class="fa-regular fa-heart"></i>
+              <i class="heart fa-regular fa-heart"></i>
             </div>
             <div>
               <h1 class="text-xl font-bold">Ambulance Service</h1>
@@ -194,9 +197,9 @@
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="rounded-lg px-12 text-white bg-green-500 hover:bg-gray-400"
+                class="card-btn rounded-lg px-12 text-white bg-green-500 hover:bg-gray-400"
               >
-                <i class="fa-solid fa-phone"></i> Copy
+                <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
@@ -205,7 +208,7 @@
               <div class="p-3 w-15 rounded-xl bg-[#ffe3e2]">
                 <img src="./assets/emergency.png" alt="" class="w-8" />
               </div>
-              <i class="fa-regular fa-heart"></i>
+              <i class="heart fa-regular fa-heart"></i>
             </div>
             <div>
               <h1 class="text-xl font-bold">Women & Child Helpline</h1>
@@ -224,9 +227,9 @@
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="rounded-lg px-12 text-white bg-green-500 hover:bg-gray-400"
+                class="card-btn rounded-lg px-12 text-white bg-green-500 hover:bg-gray-400"
               >
-                <i class="fa-solid fa-phone"></i> Copy
+                <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
@@ -235,7 +238,7 @@
               <div class="p-3 w-15 rounded-xl bg-[#ffe3e2]">
                 <img src="./assets/emergency.png" alt="" class="w-8" />
               </div>
-              <i class="fa-regular fa-heart"></i>
+              <i class="heart fa-regular fa-heart"></i>
             </div>
             <div>
               <h1 class="text-xl font-bold">Anti-Corruption Helpline</h1>
@@ -254,9 +257,9 @@
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="rounded-lg px-12 text-white bg-green-500 hover:bg-gray-400"
+                class="card-btn rounded-lg px-12 text-white bg-green-500 hover:bg-gray-400"
               >
-                <i class="fa-solid fa-phone"></i> Copy
+                <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
@@ -265,7 +268,7 @@
               <div class="p-3 w-15 rounded-xl bg-[#ffe3e2]">
                 <img src="./assets/emergency.png" alt="" class="w-8" />
               </div>
-              <i class="fa-regular fa-heart"></i>
+              <i class="heart fa-regular fa-heart"></i>
             </div>
             <div>
               <h1 class="text-xl font-bold">Electricity Helpline</h1>
@@ -284,9 +287,9 @@
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="rounded-lg px-12 text-white bg-green-500 hover:bg-gray-400"
+                class="card-btn rounded-lg px-12 text-white bg-green-500 hover:bg-gray-400"
               >
-                <i class="fa-solid fa-phone"></i> Copy
+                <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
@@ -295,7 +298,7 @@
               <div class="p-3 w-15 rounded-xl bg-[#ffe3e2]">
                 <img src="./assets/brac.png" alt="" class="w-8" />
               </div>
-              <i class="fa-regular fa-heart"></i>
+              <i class="heart fa-regular fa-heart"></i>
             </div>
             <div>
               <h1 class="text-xl font-bold">Brac Helpline</h1>
@@ -314,9 +317,9 @@
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="rounded-lg px-12 text-white bg-green-500 hover:bg-gray-400"
+                class="card-btn rounded-lg px-12 text-white bg-green-500 hover:bg-gray-400"
               >
-                <i class="fa-solid fa-phone"></i> Copy
+                <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
@@ -325,7 +328,7 @@
               <div class="p-3 w-15 rounded-xl bg-[#ffe3e2]">
                 <img src="./assets/Bangladesh-Railway.png" alt="" class="w-8" />
               </div>
-              <i class="fa-regular fa-heart"></i>
+              <i class="heart fa-regular fa-heart"></i>
             </div>
             <div>
               <h1 class="text-xl font-bold">Bangladesh Railway Helpline</h1>
@@ -344,14 +347,14 @@
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="rounded-lg px-12 text-white bg-green-500 hover:bg-gray-400"
+                class="card-btn rounded-lg px-12 text-white bg-green-500 hover:bg-gray-400"
               >
-                <i class="fa-solid fa-phone"></i> Copy
+                <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
         </div>
-        <aside class="md:col-span-3 bg-white shadow-2xl rounded-xl space-y-4">
+        <aside class="md:col-span-3 bg-white shadow-2xl rounded-xl space-y-3">
           <div>
             <div class="flex justify-between items-center p-4">
               <div>
@@ -360,11 +363,15 @@
                 </p>
               </div>
               <div>
-                <button class="btn text-white bg-green-500 rounded-3xl">
+                <button
+                  id="clear-btn"
+                  class="btn text-white bg-green-500 rounded-3xl hover:bg-gray-400"
+                >
                   Clear
                 </button>
               </div>
             </div>
+            <div id="history-card"></div>
           </div>
         </aside>
       </section>
