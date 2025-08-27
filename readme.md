@@ -111,6 +111,11 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 ### 6. Answer the following questions clearly:
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+
+Answer=> getElementById means I can get a specific tag & it's innerText by giving the tag a unique name.I will get not more than 1 tag because id is unique for every tags.
+
+getElementsByClassName means I can get specific tags & there innerText by giving them a same classname.So I can get more than 1 tags by getElementsByClassName.
+
 2. How do you **create and insert a new element into the DOM**?
 3. What is **Event Bubbling** and how does it work?
 4. What is **Event Delegation** in JavaScript? Why is it useful?

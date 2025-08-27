@@ -76,11 +76,26 @@ document.getElementById("clear-btn").addEventListener("click", function () {
 
 //Copy Button
 
-document.getElementById("btn-copy").addEventListener("click", function () {
-  alert("Copied");
-  const countCopy = getElement("counting-btn");
-  const countCopyInside = countCopy.innerText;
-  const countCopyInsideNumberConverted = Number(countCopyInside);
-  const increaseNumber = countCopyInsideNumberConverted + 1;
-  countCopy.innerText = increaseNumber;
-});
+// document.getElementById("btn-copy").addEventListener("click", function () {});
+
+//Copy Hotline Numbers
+
+const copyNumbers = document.getElementsByClassName("number-copy-btn");
+for (const copyNumb of copyNumbers) {
+  copyNumb.addEventListener("click", function () {
+    // console.log("copied");
+    const copyNumbBtn =
+      copyNumb.parentNode.parentNode.children[1].children[2].innerText;
+
+    navigator.clipboard.writeText(copyNumbBtn);
+
+    alert(`The Number ${copyNumbBtn} copied`);
+    const countCopy = getElement("counting-btn");
+    const countCopyInside = countCopy.innerText;
+    const countCopyInsideNumberConverted = Number(countCopyInside);
+    const increaseNumber = countCopyInsideNumberConverted + 1;
+    countCopy.innerText = increaseNumber;
+
+    // console.log(copyNumbBtn);
+  });
+}
