@@ -35,7 +35,7 @@ for (let cardButton of cardBtn) {
 
     newCard.innerHTML = `
     
-       <div class="p-7">
+       <div class="p-2">
                 <div
                   class="flex justify-between items-center p-5 bg-[#FAFAFA] shadow-xl rounded-lg"
                 >
