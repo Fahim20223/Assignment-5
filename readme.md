@@ -30,7 +30,7 @@ Answer=>
 
 Event Bubbling means when we click on an element that goes to its target & than bubble up to its parent . Like this we can go to the top of the page.
 
-Ex: In HTML:
+**_Ex: In HTML_**:
 
 ```
 <div id="btn-parent">
@@ -40,17 +40,18 @@ Ex: In HTML:
 </div>
 ```
 
-in Javascript:
+**_in Javascript_**:
 
-const btnClick = document.getElementById('btn').addEventListener('click',function(){
+```const btnClick = document.getElementById('btn').addEventListener('click',function(){
 console.log('button clicked')
 })
 Output: button clicked
+```
 
-const btnClick = document.getElementById('btn-parent').addEventListener('click',function(){
+`const btnClick = document.getElementById('btn-parent').addEventListener('click',function(){
 console.log('Button parent clicked')
 })
-Output:Button parent clicked
+Output:Button parent clicked`
 
 ### 4. What is **Event Delegation** in JavaScript? Why is it useful?
 
@@ -63,7 +64,3 @@ Answer=>
 preventDefault() prevents the default behavior of an element , like preventing form from reloading the page .
 
 stopPropagation() stops the Event from bubbling .
-
-```
-
-```
