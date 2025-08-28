@@ -4,31 +4,31 @@
 
 Answer=>
 
-- `getElementById`:It is used to access a single element with a specific unique 'id'.'id' is unique for every element so it will return only one element.
+- `getElementById`: _It is used to access a single element with a specific unique 'id' . 'id' is unique for every element so it will return only one element._
 
-- `getElementsByClassName`:It is used to access list of elements with a same class name.
+- `getElementsByClassName`: _It is used to access list of elements with a same class name._
 
-- `querySelector`: It returns the first element that matches a CSS selector (like .class or #id).
+- `querySelector`: _It returns the first element that matches a CSS selector (like .class or #id)._
 
-- `querySelectorAll`: It returns the list of elements that matches a CSS selector (like .class or #id).
+- `querySelectorAll`: _It returns the list of elements that matches a CSS selector (like .class or #id)._
 
 ### 2. How do you **create and insert a new element into the DOM**?
 
 Answer=>
 
-For create and insert a new element into the DOM , I use :
+_For create and insert a new element into the DOM , I use :_
 
-const element = document.createElement('div');
+_const element = document.createElement('div');_
 
-document.body.appendChild(element);
+_document.body.appendChild(element);_
 
-We can use other tags instead of div , like 'p' 'h' etc. Than just appendChild .
+_We can use other tags instead of div , like 'p' 'h' etc. Than just appendChild._
 
 ### 3. What is **Event Bubbling** and how does it work?
 
 Answer=>
 
-Event Bubbling means when we click on an element that goes to its target & than bubble up to its parent . Like this we can go to the top of the page.
+_Event Bubbling means when we click on an element that goes to its target & than bubble up to its parent . Like this we can go to the top of the page._
 
 **_Ex: In HTML_**:
 
@@ -42,25 +42,29 @@ Event Bubbling means when we click on an element that goes to its target & than 
 
 **_in Javascript_**:
 
-```const btnClick = document.getElementById('btn').addEventListener('click',function(){
+```
+const btnClick = document.getElementById('btn').addEventListener('click',function(){
 console.log('button clicked')
 })
 Output: button clicked
-```
 
-`const btnClick = document.getElementById('btn-parent').addEventListener('click',function(){
+
+const btnClick = document.getElementById('btn-parent').addEventListener('click',function(){
 console.log('Button parent clicked')
 })
-Output:Button parent clicked`
+Output:Button parent clicked
+```
 
 ### 4. What is **Event Delegation** in JavaScript? Why is it useful?
 
 Answer=>
-Event Delegation means adding an EventListener to a parent element instead of each single child element . As a result the parent will handle every child .It is very useful when we are going to work with lot of elements. it's clear & easier to manage we don't have to use lot of EventListener.We can manage all using fewer EventListener
+
+_Event Delegation means adding an EventListener to a parent element instead of each single child element . As a result the parent will handle every child .It is very useful when we are going to work with lot of elements. it's clear & easier to manage we don't have to use lot of EventListener.We can manage all using fewer EventListener_
 
 ### 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
 Answer=>
-preventDefault() prevents the default behavior of an element , like preventing form from reloading the page .
 
-stopPropagation() stops the Event from bubbling .
+- `preventDefault()`: _prevents the default behavior of an element , like preventing form from reloading the page._
+
+- `stopPropagation()`: _stops the Event from bubbling ._
