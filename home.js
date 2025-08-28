@@ -22,7 +22,7 @@ for (let cardButton of cardBtn) {
     // console.log(countCoinInnerText);
 
     if (countCoinInnerText < 20) {
-      alert(`❌ You don't have sufficient coins`);
+      alert(`❌ You don't have sufficient coins . You need at least 20 coins.`);
       return;
     } else {
       alert(`📞 Calling at ${subTitle} ${number}...`);
