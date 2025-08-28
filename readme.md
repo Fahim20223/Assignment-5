@@ -26,11 +26,12 @@ Answer: Event Bubbling means when I click on an element that also goes to its pa
 
 Ex: In HTML:
 
-" <div id="btn-parent">
+```<div id="btn-parent">
 
 <button id="btn">Click Me</button>
 
-</div>"
+</div>
+```
 
 in Javascript:
 const btnClick = document.getElementById('btn').addEventListener('click',function(){
