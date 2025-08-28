@@ -1,4 +1,4 @@
-### 6. Answer the following questions clearly:
+### Answer of the following questions clearly:
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 
@@ -14,15 +14,16 @@ Through querySelector I can get the whole list of all elements that matches with
 
 Answer=> For create and insert a new element into the DOM , I use :
 
-const Element = document.createElement('div');
+const element = document.createElement('div');
 
-document.body.appendChild(Element);
+document.body.appendChild(element);
 
 We can use other tags instead of div , like 'p' 'h' etc. Than just appendChild .
 
 3. What is **Event Bubbling** and how does it work?
 
-Answer: Event Bubbling means when I click on an element that also goes to its parent & its parents also goes to its parent . Like this we can go to the top of the page.
+Answer=>
+Event Bubbling means when I click on an element that also goes to its parent & its parents also goes to its parent . Like this we can go to the top of the page.
 
 Ex: In HTML:
 
@@ -47,11 +48,12 @@ Output:Button parent clicked
 
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 
-Answer: Event Delegation means adding an EventListener to a parent element instead of each single child element . As a result the parent will handle every child .It is very useful when we are going to work with lot of elements. it's clear & easier to manage we don't have to use lot of EventListener.We can manage all using fewer EventListener
+Answer=>
+Event Delegation means adding an EventListener to a parent element instead of each single child element . As a result the parent will handle every child .It is very useful when we are going to work with lot of elements. it's clear & easier to manage we don't have to use lot of EventListener.We can manage all using fewer EventListener
 
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
-Answer:
+Answer=>
 preventDefault() prevents the default behavior of an element , like preventing form from reloading the page .
 
 stopPropagation() stops the Event from bubbling .

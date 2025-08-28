@@ -25,7 +25,7 @@ for (let cardButton of cardBtn) {
       alert(`❌ You don't have sufficient coins`);
       return;
     } else {
-      alert(`Calling at ${subTitle} ${number}...`);
+      alert(`📞 Calling at ${subTitle} ${number}...`);
     }
     const deduction = countCoinInnerText - 20;
     countCoin.innerText = deduction;
